@@ -1,0 +1,29 @@
+\begin{table}[!t]
+\caption*{
+{\large Random forest pairwise classification accuracy, distinguishing each LLM from human text}
+} 
+\fontsize{12.0pt}{14.4pt}\selectfont
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l|rrrr}
+\toprule
+ & \multicolumn{2}{c}{Trained on HAP-E} & \multicolumn{2}{c}{Trained on CAP} \\ 
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+LLM & Training & Test on CAP & Training & Test on HAP-E \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{5}{l}{GPT-4o} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+\hspace*{11.25pt} GPT-4o & 98.4\% & 98.4\% & 98.8\% & 97.4\% \\ 
+\hspace*{11.25pt} GPT-4o Mini & 98.7\% & 98.1\% & 99.2\% & 97.6\% \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{5}{l}{Llama Instruct} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+\hspace*{11.25pt} Llama 3 70B Instruct & 94.7\% & 93.7\% & 94.4\% & 91.8\% \\ 
+\hspace*{11.25pt} Llama 3 8B Instruct & 95.5\% & 95.4\% & 96.2\% & 94.2\% \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{5}{l}{Llama Base} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+\hspace*{11.25pt} Llama 3 70B & 93.2\% & 94.6\% & 95.7\% & 89.1\% \\ 
+\hspace*{11.25pt} Llama 3 8B & 93.9\% & 93.7\% & 95.5\% & 89.3\% \\ 
+\bottomrule
+\end{tabular*}
+\end{table}
+

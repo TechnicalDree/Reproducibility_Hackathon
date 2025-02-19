@@ -1,0 +1,29 @@
+\begin{table}[!t]
+\caption*{
+{\large Lasso pairwise classification accuracy, distinguishing each LLM from human text}
+} 
+\fontsize{12.0pt}{14.4pt}\selectfont
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l|rrrr}
+\toprule
+ & \multicolumn{2}{c}{Trained on CAP} & \multicolumn{2}{c}{Trained on HAP-E} \\ 
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+LLM & Training & Test on HAP-E & Training & Test on CAP \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{5}{l}{GPT-4o} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+\hspace*{11.25pt} GPT-4o & 95.9\% & 95.3\% & 96.5\% & 95.3\% \\ 
+\hspace*{11.25pt} GPT-4o Mini & 96.7\% & 96.3\% & 96.9\% & 96.2\% \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{5}{l}{Llama Instruct} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+\hspace*{11.25pt} Llama 3 70B Instruct & 91.1\% & 90.7\% & 92.1\% & 90.2\% \\ 
+\hspace*{11.25pt} Llama 3 8B Instruct & 92.4\% & 91.8\% & 92.9\% & 91.9\% \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{5}{l}{Llama Base} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+\hspace*{11.25pt} Llama 3 70B & 77.2\% & 73.2\% & 75.6\% & 75.3\% \\ 
+\hspace*{11.25pt} Llama 3 8B & 77.6\% & 73.8\% & 76.3\% & 75.3\% \\ 
+\bottomrule
+\end{tabular*}
+\end{table}
+
